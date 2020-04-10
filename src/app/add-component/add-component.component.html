@@ -1,0 +1,23 @@
+<div class="container">
+    <form #addForm="ngForm" (ngSubmit)="onAdd(addForm)">
+        <div class="row" style=" margin-top: 50px;">
+            <div class="col-xs-4" style="margin-left: 10px;">
+                <select class="form-control" name="options" ngModel>
+                    <option>Groceries</option>
+                    <option>Home needs</option>
+                    <option>Vegetables</option>
+                    <option>Fruits</option>
+                </select>
+            </div>
+            <div class="col-xs-4">
+                <input type="text" class="form-control" name="productName" ngModel/>
+            </div>
+            <div class="col-xs-2">
+                <input type="number" class="form-control" name="quantity" ngModel/>
+            </div>
+            <div class="col-xs-1">
+                <button type="submit" class="btn btn-primary">ADD</button>
+            </div>
+        </div>
+    </form>
+</div>
